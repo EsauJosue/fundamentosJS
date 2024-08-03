@@ -1,0 +1,19 @@
+# Ignorar todos los archivos en la carpeta node_modules/
+node_modules/
+
+# Ignorar archivos generados por el entorno de desarrollo
+.DS_Store
+.env
+
+# Ignorar archivos de compilación y construcción
+dist/
+build/
+out/
+
+# Ignorar archivos de dependencias específicas de JavaScript
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#ignorar archivos de vs code
+.vscode/
