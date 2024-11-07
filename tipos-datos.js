@@ -71,7 +71,7 @@ console.log(numeroGrande2);
 // 6. Symbol
 // 7. BigInt
 
-// Tipos de datos compuestos
+// Tipos de datos complejos
 // Son los tipos de datos más complejos en JavaScript
 // Son mutables
 // Tienen métodos
