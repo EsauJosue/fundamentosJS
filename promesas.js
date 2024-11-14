@@ -11,18 +11,23 @@
 //Las promesas se pueden consumir con la sintaxis async/await.
 
 //Ejemplo de promesa
+// un callback es una función que se pasa como argumento a otra función y se ejecuta después de que algo sucede.
 
 const promesa = new Promise((resolve, reject) => {
     setTimeout(() => {
-        reject();
+        resolve();
     }, 2000);
 });
 
-promesa.then(() => {
+promesa.then(() => { //Con then se ejecuta la promesa, nosotros indicamos que hacer cuando se cumpla la promesa.
     console.log('Then de la promesa');
 }   );
 
-promesa.catch(() => {
+promesa.catch(() => { //Con catch se ejecuta la promesa, nosotros indicamos que hacer cuando se rechace la promesa.
     console.log('Catch de la promesa');
 });
+
+promesa.finally(() => { //Con finally se ejecuta la promesa, nosotros indicamos que hacer cuando se cumpla o rechace la promesa.
+    console.log('Finally de la promesa');
+}   );
 
